@@ -10,7 +10,7 @@ local separator = require('widget.separator')
 -- May not work as expected
 clock_widget = wibox.widget {
     {
-        format = '%H\n%m',
+        format = '%H\n%M',
         font = beautiful.font_bold,
         widget = wibox.widget.textclock
     },
