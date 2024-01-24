@@ -11,13 +11,13 @@ tag.connect_signal('request::default_layouts', function()
         awful.layout.suit.max
     })
 end)
-
+ 
 -- Create a tag for each of the tag values
 -- Pass an index to make sure the first tag is selected
 screen.connect_signal('request::desktop_decoration', function(s)
     for i, tag in pairs(tags) do
         -- Do checks to specify for which tags we do or do not wish to give out gaps
-        if tag.name == 'Music' then
+        if tag.layout == 'max' then
             createTag(i, tag.name, tag.icon, s, false)
         else
             createTag(i, tag.name, tag.icon, s)

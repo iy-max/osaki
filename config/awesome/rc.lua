@@ -25,7 +25,7 @@ screen.connect_signal('request::wallpaper',
                 widget = {
                     {
                         image = beautiful.wallpaper,
-                        resize = true,
+                        -- resize = true,
                         widget = wibox.widget.imagebox
                     },
                     valign = 'center',

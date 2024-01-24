@@ -9,7 +9,6 @@ return {
     {
         name = 'Browser',
         icon = tag_icons.browser,
-        -- defaultApp = 
     },
     {
         name = 'Code',
@@ -17,10 +16,15 @@ return {
     },
     {
         name = 'Music',
-        icon = tag_icons.music
+        icon = tag_icons.music,
+        layout = 'max'
     },
     {
         name = 'Game',
         icon = tag_icons.game
+    },
+    {
+        name = 'Experiment',
+        icon = tag_icons.experiment
     }
 }

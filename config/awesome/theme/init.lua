@@ -39,6 +39,7 @@ theme.icons.tags.browser = formatImageColor(icons_format_strings.browser, theme.
 theme.icons.tags.code = formatImageColor(icons_format_strings.code, theme.fg_normal) -- _bright70)
 theme.icons.tags.music = formatImageColor(icons_format_strings.music, theme.fg_normal)-- _bright70)
 theme.icons.tags.game = formatImageColor(icons_format_strings.game, theme.fg_normal)--_bright70)
+theme.icons.tags.experiment = formatImageColor(icons_format_strings.experiment, theme.fg_normal)
 
 -- Network
 theme.icons.network = {}
