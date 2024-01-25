@@ -72,7 +72,7 @@ theme.panel.separator_ratio = 0.6
 theme.panel.top_padding = dpi(0)
 theme.panel.bottom_padding = dpi(5)
 
-theme.panel.task_width = dpi(40)
+theme.panel.task_width = dpi(100)
 
 
 -- CLIENT --
@@ -81,11 +81,12 @@ theme.client_radius = dpi(20)
 --theme.border_color = theme.fg_normal
 
 -- Fonts
-theme.font_regular = 'RobotoMono Nerd Font Mono Regular 12'
 theme.font_medium = 'RobotoMono Nerd Font Mono Medium 12'
+theme.font_semibold_10 = 'RobotoMono Nerd Font Mono SemiBold 10'
 theme.font_semibold = 'RobotoMono Nerd Font Mono SemiBold 12'
 theme.font_bold = 'RobotoMono Nerd Font Mono Bold 12'
 theme.font_bold_20 = 'RobotoMono Nerd Font Mono Bold 20'
+theme.font = theme.font_semibold_10
 
 -- Wallpaper
 theme.wallpaper = theme_dir .. '/wallpaper.png'

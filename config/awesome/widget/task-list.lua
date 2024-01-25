@@ -20,9 +20,17 @@ local createTaskList = function(s)
                     widget = wibox.container.margin
                 },
                 {
-                    id = 'text_role',
-                    widget = wibox.widget.textbox
+                    {
+                        id = 'text_role',
+                        --ellipsize = 'end',
+                        widget = wibox.widget.textbox
+                    },
+                    top = beautiful.panel.icon_margin,
+                    bottom = beautiful.panel.icon_margin,
+                    widget = wibox.container.margin
                 },
+                --forced_width = beautiful.panel.task_width,
+                --forced_width = 300,
                 widget = wibox.layout.fixed.horizontal
             },
             id = 'background_role',

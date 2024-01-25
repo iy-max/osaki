@@ -11,6 +11,7 @@ local updateVisibility = function()
     for s in screen do
         if s.selected_tag then
             s.left_panel.visible = not s.selected_tag.fullscreenMode 
+            s.top_panel.visible = not s.selected_tag.fullscreenMode
         end
     end
 end

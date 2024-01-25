@@ -19,11 +19,11 @@ local topPanel = function(s)
         widget = panelContent(s)
     }
 
-    panel:struts {
+    panel:struts( 
         {
             top = beautiful.panel.height
         }
-    }
+    )
 
     return panel
 end
