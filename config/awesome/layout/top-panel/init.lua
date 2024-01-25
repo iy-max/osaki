@@ -16,6 +16,7 @@ local topPanel = function(s)
         y = s.geometry.y,
         bg = beautiful.bg_normal,
         fg = beautiful.fg_normal,
+        widget = panelContent(s)
     }
 
     panel:struts {

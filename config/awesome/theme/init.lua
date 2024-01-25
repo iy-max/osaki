@@ -72,6 +72,9 @@ theme.panel.separator_ratio = 0.6
 theme.panel.top_padding = dpi(0)
 theme.panel.bottom_padding = dpi(5)
 
+theme.panel.task_width = dpi(40)
+
+
 -- CLIENT --
 theme.client_radius = dpi(20)
 -- theme.border_width = dpi(10)
