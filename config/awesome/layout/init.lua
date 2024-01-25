@@ -1,8 +1,10 @@
 local awful = require('awful')
 local left_panel = require('layout.left-panel')
+local top_panel = require('layout.top-panel')
 
 screen.connect_signal('request::desktop_decoration', function(s)
     s.left_panel = left_panel(s)
+    s.top_panel = top_panel(s)
 end)
 
 local updateVisibility = function()

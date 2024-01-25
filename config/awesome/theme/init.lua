@@ -59,11 +59,11 @@ theme.icons.volume.muted = theme.icons.volume_dir .. '/muted.svg'
 -- PANEL -- 
 theme.panel = {}
 theme.panel_width = dpi(40) 
-theme.panel_height = dpi(45)
+theme.panel_height = dpi(40)
 theme.panel_icon_margin = dpi(8)
 
 theme.panel.width = dpi(40)
-theme.panel.height = dpi(48)
+theme.panel.height = dpi(40)
 theme.panel.icon_margin = dpi(8)
 theme.panel.icon_slightly_smaller_margin = dpi(6)
 theme.panel.icon_slightly_bigger_margin = dpi(10)
