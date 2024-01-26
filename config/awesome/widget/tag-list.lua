@@ -11,25 +11,32 @@ local buttons = require('configuration.buttons.tags')
 -- index: widget pos in list (number)
 -- objects: tags: the list of tags (table)
 local tagInstanceCallback = function(self, c3, index, tags)
+    -- Change background from different mouse events
     self:connect_signal('mouse::enter', function()
          self:get_children_by_id('background_role')[1].bg = beautiful.bg_hue300
-    end)
-    self:connect_signal('button::press', function()
-        self:get_children_by_id('background_role')[1].bg = beautiful.bg_hue300_bright60
     end)
     self:connect_signal('mouse::leave', function()
         self:get_children_by_id('background_role')[1].bg = '' 
     end)
-    
+    self:connect_signal('button::press', function()
+        self:get_children_by_id('background_role')[1].bg = beautiful.bg_hue300_bright60
+    end)
+    self:connect_signal('button::release', function()
+        self:get_children_by_id('background_role')[1].bg = beautiful.bg_hue300
+    end)
 
+    -- Add and remove border signals
     self:connect_signal('add-border', function()
         self:get_children_by_id('selector_margin')[1].color = beautiful.fg_teal
     end)
     self:connect_signal('remove-border', function()
         self:get_children_by_id('selector_margin')[1].color = ''
     end)
-    -- For initial border when tags are initialized 
+
+    -- Add border when widget is initialized
     if c3.selected then self:emit_signal('add-border') end
+
+    -- When tag's selected property changes add or remove borders
     c3:connect_signal('property::selected', function()
         if c3.selected then
             self:emit_signal('add-border')
