@@ -49,6 +49,8 @@ local createTaskInstanceCallback = function(self, c, index, clients)
 
     -- If client is already focused then add selector
     if client.focus == c then self:emit_signal('add-border') end
+
+    -- Emit add or remove border signals when clients focus changes
     c:connect_signal('focus', function()
          self:emit_signal('add-border')
     end)
@@ -64,7 +66,7 @@ local createTaskInstanceCallback = function(self, c, index, clients)
         self:get_children_by_id('close_icon')[1].image = beautiful.icons.close
     end)
 
-    -- Add buttons to close_icon
+    -- Add buttons to close_icon | M1 to close
     self:get_children_by_id('close_icon')[1].buttons = {
         awful.button({ }, 1, function()
             c:kill()
