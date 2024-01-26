@@ -16,7 +16,7 @@ local createTaskList = function(s)
                         id = 'clienticon',
                         widget = awful.widget.clienticon
                     },
-                    margins = beautiful.panel.icon_margin,
+                    margins = beautiful.panel.icon_slightly_bigger_margin,
                     widget = wibox.container.margin
                 },
                 {
@@ -29,8 +29,6 @@ local createTaskList = function(s)
                     bottom = beautiful.panel.icon_margin,
                     widget = wibox.container.margin
                 },
-                --forced_width = beautiful.panel.task_width,
-                --forced_width = 300,
                 widget = wibox.layout.fixed.horizontal
             },
             id = 'background_role',

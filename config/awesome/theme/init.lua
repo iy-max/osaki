@@ -25,6 +25,8 @@ theme.fg_teal = '#3FC1C9'
 theme.fg_normal_bright75 = '#BF3D65'
 theme.fg_normal_bright70 = '#B2395E'
 
+theme.tasklist_fg_normal = theme.fg_white
+
 -- ICONS --
 theme.icons.unavail = theme.icons_dir .. '/unavail.svg'
 
@@ -81,12 +83,15 @@ theme.client_radius = dpi(20)
 --theme.border_color = theme.fg_normal
 
 -- Fonts
+theme.font_regular = 'RobotoMono Nerd Font Mono Regular 12'
 theme.font_medium = 'RobotoMono Nerd Font Mono Medium 12'
 theme.font_semibold_10 = 'RobotoMono Nerd Font Mono SemiBold 10'
 theme.font_semibold = 'RobotoMono Nerd Font Mono SemiBold 12'
-theme.font_bold = 'RobotoMono Nerd Font Mono Bold 12'
+theme.font_bold = 'RobotoMono Nerd Font Mono Bold 14'
 theme.font_bold_20 = 'RobotoMono Nerd Font Mono Bold 20'
-theme.font = theme.font_semibold_10
+--theme.font = 'Roboto Condensed Light 10' 
+theme.font = 'Josefin Sans Regular 10'
+-- theme.font_bold = 'Josefin Sans Regular 16'
 
 -- Wallpaper
 theme.wallpaper = theme_dir .. '/wallpaper.png'
