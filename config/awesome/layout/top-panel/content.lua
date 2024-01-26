@@ -8,7 +8,7 @@ local content = function(s)
         taskList(s),
         nil,
         nil,
-        widget = wibox.layout.align.horizontal
+        widget = wibox.layout.align.horizontal,
     }
 end
 

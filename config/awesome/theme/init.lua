@@ -17,9 +17,13 @@ theme.useless_gap = dpi(20)
 -- COLORS --
 -- theme.bg_normal = '#490030'
 theme.bg_normal = '#2D132C'
+theme.bg_normal_bright40 = '#662B64'
+theme.bg_normal_bright55 = '#8C3B89'
+theme.bg_normal_bright70 = '#B24BAF'
 theme.bg_hue300 = '#6B366B'
 theme.fg_normal = '#FC5185'
 theme.fg_white = '#F5F5F5'
+theme.fg_white_bright60 = '#999999'
 theme.fg_teal = '#3FC1C9'
 
 theme.fg_normal_bright75 = '#BF3D65'
@@ -28,7 +32,10 @@ theme.fg_normal_bright70 = '#B2395E'
 theme.tasklist_fg_normal = theme.fg_white
 
 -- ICONS --
+-- General
 theme.icons.unavail = theme.icons_dir .. '/unavail.svg'
+--theme.icons.close = theme.icons_dir .. '/close.svg'
+theme.icons.close = formatImageColor(icons_format_strings.close, theme.bg_normal_bright55)
 
 -- Home
 theme.icons.rose = theme.icons_dir .. '/rose-pink.svg'
@@ -69,7 +76,9 @@ theme.panel.height = dpi(40)
 theme.panel.icon_margin = dpi(8)
 theme.panel.icon_slightly_smaller_margin = dpi(6)
 theme.panel.icon_slightly_bigger_margin = dpi(10)
+theme.panel.icon_even_bigger_margin = dpi(14)
 theme.panel.selector_margin = dpi(2)
+theme.panel.selector_bigger_margin = dpi(3)
 theme.panel.separator_ratio = 0.6
 theme.panel.top_padding = dpi(0)
 theme.panel.bottom_padding = dpi(5)

@@ -5,17 +5,12 @@ local dpi = beautiful.xresources.apply_dpi
 
 local buttons = require('configuration.buttons.tags')
 
-local sendSelectorSignal = function(w)
-    
-end
-
 -- Callback ran once every tag widget instance is created, to attach signals or what not
 -- self: widget instance, e.g. self:connect_signal(...), self.get_children_by_id['icon_role'][0] to access the imagebox widget (widget)
 -- c3: The tag (tag)
 -- index: widget pos in list (number)
 -- objects: tags: the list of tags (table)
 local tagInstanceCallback = function(self, c3, index, tags)
-    widget_instance = self
     self:connect_signal('mouse::enter', function()
          self:get_children_by_id('background_role')[1].bg = beautiful.bg_hue300
     end)
