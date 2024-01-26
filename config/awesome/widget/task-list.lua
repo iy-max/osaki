@@ -88,6 +88,7 @@ local createTaskList = function(s)
                             widget = awful.widget.clienticon
                         },
                         margins = beautiful.panel.icon_slightly_bigger_margin,
+                        bottom = beautiful.panel.icon_margin - beautiful.panel.selector_bigger_margin,
                         widget = wibox.container.margin
                     },
                     {
@@ -102,7 +103,7 @@ local createTaskList = function(s)
                             widget = wibox.container.background
                         },
                         top = beautiful.panel.icon_margin,
-                        bottom = beautiful.panel.icon_margin,
+                        bottom = beautiful.panel.icon_margin - beautiful.panel.selector_bigger_margin,
                         widget = wibox.container.margin
                     },
                     {
@@ -112,6 +113,7 @@ local createTaskList = function(s)
                             widget = wibox.widget.imagebox
                         },
                         margins = beautiful.panel.icon_margin,
+                        bottom = beautiful.panel.icon_margin - beautiful.panel.selector_bigger_margin,
                         widget = wibox.container.margin
                     },
                     widget = wibox.layout.align.horizontal
