@@ -14,9 +14,14 @@ local tagInstanceCallback = function(self, c3, index, tags)
     self:connect_signal('mouse::enter', function()
          self:get_children_by_id('background_role')[1].bg = beautiful.bg_hue300
     end)
+    self:connect_signal('button::press', function()
+        self:get_children_by_id('background_role')[1].bg = beautiful.bg_hue300_bright60
+    end)
     self:connect_signal('mouse::leave', function()
         self:get_children_by_id('background_role')[1].bg = '' 
     end)
+    
+
     self:connect_signal('add-border', function()
         self:get_children_by_id('selector_margin')[1].color = beautiful.fg_teal
     end)

@@ -25,14 +25,14 @@ screen.connect_signal('request::desktop_decoration', function(s)
     end
 end)
 
--- This is to keep focus when changing between tags
-tag.connect_signal('property::selected', function(t)
-    if t.selected then
-        all_clients = t:clients()
-        for _, c in ipairs(all_clients) do
-            if c:isvisible() then
-                client.focus = c 
-            end
-        end
-    end
-end)
+-- This is to keep focus when changing between tags, no need for with awful.autofocus
+-- tag.connect_signal('property::selected', function(t)
+--     if t.selected then
+--         all_clients = t:clients()
+--         for _, c in ipairs(all_clients) do
+--             if c:isvisible() then
+--                 client.focus = c 
+--             end
+--         end
+--     end
+-- end)

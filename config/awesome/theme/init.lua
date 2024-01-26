@@ -21,6 +21,8 @@ theme.bg_normal_bright40 = '#662B64'
 theme.bg_normal_bright55 = '#8C3B89'
 theme.bg_normal_bright70 = '#B24BAF'
 theme.bg_hue300 = '#6B366B'
+theme.bg_hue300_bright60 = '#994D99'
+
 theme.fg_normal = '#FC5185'
 theme.fg_white = '#F5F5F5'
 theme.fg_white_bright60 = '#999999'
