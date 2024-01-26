@@ -83,7 +83,7 @@ theme.panel.selector_margin = dpi(2)
 theme.panel.selector_bigger_margin = dpi(3)
 theme.panel.separator_ratio = 0.6
 theme.panel.top_padding = dpi(0)
-theme.panel.bottom_padding = dpi(5)
+theme.panel.bottom_padding = dpi(8)
 
 theme.panel.task_width = dpi(100)
 
@@ -98,7 +98,7 @@ theme.font_regular = 'RobotoMono Nerd Font Mono Regular 12'
 theme.font_medium = 'RobotoMono Nerd Font Mono Medium 12'
 theme.font_semibold_10 = 'RobotoMono Nerd Font Mono SemiBold 10'
 theme.font_semibold = 'RobotoMono Nerd Font Mono SemiBold 12'
-theme.font_bold = 'RobotoMono Nerd Font Mono Bold 14'
+theme.font_bold = 'RobotoMono Nerd Font Mono Bold 12'
 theme.font_bold_20 = 'RobotoMono Nerd Font Mono Bold 20'
 --theme.font = 'Roboto Condensed Light 10' 
 theme.font = 'Josefin Sans Regular 10'

@@ -3,8 +3,6 @@
 -- and replace it for a %s to be able to use it with the helper function format-image.lua
 local icons_format_strings = {}
 
-icons_format_strings.close = ''
-
 icons_format_strings.close = '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->\
 <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">\
@@ -12,7 +10,6 @@ icons_format_strings.close = '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "ht
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>\
 <g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11083)"> <path d="M7 7.00006L17 17.0001M7 17.0001L17 7.00006" stroke="%s" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/> </g> <defs> <clipPath id="clip0_429_11083"> <rect width="24" height="24" fill="white"/> </clipPath> </defs> </g>\
 </svg>'
-
 
 icons_format_strings.browser = '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->\

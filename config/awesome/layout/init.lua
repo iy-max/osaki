@@ -16,12 +16,12 @@ local updateVisibility = function()
     end
 end
 
-client.connect_signal('property::fullscreen', function(c)
-    c.screen.selected_tag.fullscreenMode = c.fullscreen
+tag.connect_signal('property::selected', function()
     updateVisibility()
 end)
 
-tag.connect_signal('property::selected', function()
+client.connect_signal('property::fullscreen', function(c)
+    c.screen.selected_tag.fullscreenMode = c.fullscreen
     updateVisibility()
 end)
 
