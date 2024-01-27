@@ -34,9 +34,9 @@ theme.fg_normal_bright70 = '#B2395E'
 theme.tasklist_fg_normal = theme.fg_white
 
 -- ICONS --
+
 -- General
 theme.icons.unavail = theme.icons_dir .. '/unavail.svg'
---theme.icons.close = theme.icons_dir .. '/close.svg'
 theme.icons.close = formatImageColor(icons_format_strings.close, theme.bg_normal_bright55)
 
 -- Home
@@ -91,18 +91,16 @@ theme.panel.task_width = dpi(100)
 -- CLIENT --
 theme.client_radius = dpi(20)
 -- theme.border_width = dpi(10)
---theme.border_color = theme.fg_normal
+-- theme.border_color = theme.fg_normal
 
 -- Fonts
+theme.font = 'Josefin Sans Regular 10'
 theme.font_regular = 'RobotoMono Nerd Font Mono Regular 12'
 theme.font_medium = 'RobotoMono Nerd Font Mono Medium 12'
 theme.font_semibold_10 = 'RobotoMono Nerd Font Mono SemiBold 10'
 theme.font_semibold = 'RobotoMono Nerd Font Mono SemiBold 12'
 theme.font_bold = 'RobotoMono Nerd Font Mono Bold 12'
 theme.font_bold_20 = 'RobotoMono Nerd Font Mono Bold 20'
---theme.font = 'Roboto Condensed Light 10' 
-theme.font = 'Josefin Sans Regular 10'
--- theme.font_bold = 'Josefin Sans Regular 16'
 
 -- Wallpaper
 theme.wallpaper = theme_dir .. '/wallpaper.png'

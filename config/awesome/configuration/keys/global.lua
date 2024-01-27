@@ -1,6 +1,7 @@
 local awful = require('awful')
 local modkey = require('configuration.keys.mod').modkey
 local programs = require('configuration.programs')
+local commands = require('configuration.commands')
 
 -- GENERAL 
 -- Terminal
@@ -10,9 +11,12 @@ local programs = require('configuration.programs')
 awful.keyboard.append_global_keybindings({
     awful.key({ modkey }, 'Return', function() awful.spawn(programs.terminal) end),
     awful.key({ modkey }, 'r', function() awful.spawn(programs.app_runner) end),
+    awful.key({ }, 'XF86AudioPlay', function() awful.spawn(commands.media.play_pause) end),
     awful.key({ modkey, 'Control' }, 'q', awesome.quit),
     awful.key({ modkey, 'Control' }, 'r', awesome.restart)
 })
+
+-- 
 
 -- TAG
 -- Switch to tag with index

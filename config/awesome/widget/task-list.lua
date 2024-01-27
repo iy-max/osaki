@@ -15,7 +15,7 @@ local buttons = {
     end)
 }
 
--- Set client name everytime name is updated, cut string if length greater than 24
+-- Set client name everytime name is updated
 local taskInstanceCallback = function(self, c, index, clients)
     -- Check text length and cut if longer than 24
     if string.len(c.name) > 24 then

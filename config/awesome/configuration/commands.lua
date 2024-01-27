@@ -13,4 +13,8 @@ commands.network = {
 
 }
 
+commands.media = {
+    play_pause = 'playerctl play-pause',
+}
+
 return commands
